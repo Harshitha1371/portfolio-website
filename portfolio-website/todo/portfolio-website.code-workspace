@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "portfolio-website",
+			"path": "../portfolio-website"
+		},
+		{
+			"name": "todo",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
