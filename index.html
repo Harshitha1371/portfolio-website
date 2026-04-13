@@ -4,7 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sri Harshitha | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #111;
+      color: white;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: black;
+      color: white;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .skills span:hover {
+      background: #555;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #444;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+  </style>
 </head>
 <body>
 
@@ -20,13 +130,13 @@
 
 <section id="home" class="hero">
   <h1>Hi, I'm Sri Harshitha 👋</h1>
-  <p>Aspiring Full Stack Developer</p>
+  <p>Full Stack Developer | Building real-world web applications</p>
   <button onclick="scrollToProjects()">View Projects</button>
 </section>
 
 <section id="about">
   <h2>About Me</h2>
-  <p>I am learning full stack development and building real-world projects.</p>
+  <p>I am a passionate Full Stack Developer learning and building real-world projects.</p>
 
   <h3>Skills</h3>
   <div class="skills">
@@ -41,23 +151,34 @@
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>To-Do List App</h3>
-    <p>Task manager with add, delete, complete & save features.</p>
+  <div class="projects">
+    <div class="card">
+      <h3>To-Do List App</h3>
+      <p>Task manager with add, delete, complete & save features.</p>
 
-    <!-- IMPORTANT FIX -->
-    <a href="todo/index.html" target="_blank">
-      <button>Live Demo</button>
-    </a>
+      <a href="todo/index.html" target="_blank">
+        <button>Live Demo</button>
+      </a>
+
+      <a href="https://github.com/Harshitha1371/portfolio-website" target="_blank">
+        <button>GitHub Code</button>
+      </a>
+    </div>
   </div>
-
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: sriharshitha1211@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/Harshitha1371" target="_blank">Profile</a></p>
+  <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn</a></p>
 </section>
 
-<script src="script.js"></script>
+<script>
+function scrollToProjects() {
+  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
 </body>
 </html>
