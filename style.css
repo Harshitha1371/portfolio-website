@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #333;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f4f4f4;
+}
+
+.hero button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
